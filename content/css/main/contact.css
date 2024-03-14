@@ -1,0 +1,70 @@
+/* start : Contact */
+
+.ses--hero {
+  background-image: url("../../assets/images/home_pizza_subheader.jpg");
+}
+
+.ses {
+  padding: 8rem 0;
+}
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.Contact-social-icon span {
+  color: #000;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.Contact-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.Contact-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg {
+  background: #3b5998;
+}
+.twitter-bg {
+  background: #55acee;
+}
+.google-bg {
+  background: #dd4b39;
+}
+/* .btn.disabled {
+      color: #000;
+      pointer-events: none;
+      background-color: #fd9d3e;
+      border-color: #fd9d3e;
+      opacity: 0.65;
+    } */
+
+.text-center {
+  text-align: center;
+}
+
+.contact-us .btn {
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 15px 100px;
+}
+
+.btn.btn-theme {
+  color: #fff;
+  background-color: #fd9d3e;
+  border-color: #fd9d3e;
+}
+
+/* end : Contact  */

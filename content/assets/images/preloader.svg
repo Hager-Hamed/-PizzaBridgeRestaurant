@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+    <g id="BG">
+        <path id="BG-Green" class="svg-fill--green animate ani_obj__0" d="M35,542A500,500 0,1,1 1035,542A500,500 0,1,1 35,542"></path>
+    </g>
+    <g id="Pizza">
+        <path id="dough" d="M202 642c-14 13-5 53 31 48l616.1-82.3c16.9-5 26.6-22.8 21.6-39.8-5-16.9-22.8-26.6-39.8-21.6-15.8 4.7-25.7 20.9-22.9 36.7 0 0 3-79-84.5-166.5S577 343 569.4 347.6L201.9 641.9c-7.7 6.2-5.9 18.6 3.5 21.8 2.7.9 602.6-80.7 602.6-80.7" class="svg-stroke svg-fill--none animate ani_obj__1"></path>
+        <path id="upper-crust" d="M872 576c3-10 5-94-92.5-191.5C607 212 569 328 569 348" class="svg-stroke svg-fill--none animate ani_obj__2"></path>
+        <g id="topping">
+            <path id="Mushroom" d="M608 479.8c-7.5 7.5-19.7 7.5-27.2 0l-7.9-7.9c-7.5-7.5-7.5-19.7 0-27.2l20.4-20.4-11.1-11.7c-3.4-3.6-2.7-9.4 1.4-12.2 19.4-13.2 46.1-11.2 63.3 6 17.2 17.2 19.2 43.9 6 63.3-2.8 4.1-8.6 4.8-12.2 1.4l-12.4-11.8-20.3 20.5z" class="svg-stroke animate ani_obj__3 ani_obj__2 ani-top"></path>
+            <path id="Bacon" d="M697.9 548.2l-8.6 24.1c-2.2 6.2-9.2 9.8-15.5 8-38.5-10.9-27.7-26.9-64.9-37.9-7.1-2.1-10.9-9.6-8.4-16.6l8.6-24.1c2.2-6.2 9.2-9.8 15.5-8 38.5 10.9 27.7 26.9 64.9 37.9 7.1 2.1 10.9 9.6 8.4 16.6z" class="svg-stroke animate ani_obj__4 ani_obj__2 ani-top"></path>
+            <path id="Half_Salami2" d="M499.3 529.2c3.3-3.9 9.2-3.8 12.4.2 14.6 18.1 14.9 44.5-.6 63s-41.6 22.8-61.9 11.6c-4.4-2.4-5.6-8.3-2.3-12.2l52.4-62.6z" class="svg-stroke animate ani_obj__5 ani_obj__2 ani-top"></path>
+            <path id="Half_Salami1" d="M475 523.6c-3.6 3.6-9.5 3-12.3-1.2-13-19.3-10.9-45.7 6.1-62.7s43.4-19.1 62.7-6.1c4.2 2.8 4.8 8.8 1.2 12.3L475 523.6z" class="svg-stroke animate ani_obj__6 ani_obj__2 ani-top"></path>
+            <path id="Pineapple2" d="M397.3 590.9l26.4-45.7c2.2-3.8.9-8.7-2.9-10.9L401.4 523c-3.8-2.2-8.7-.9-10.9 2.9l-26.4 45.7c-2.2 3.8-.9 8.7 2.9 10.9l19.4 11.2c3.8 2.3 8.7 1 10.9-2.8z" class="svg-stroke animate ani_obj__7 ani_obj__2 ani-top"></path>
+            <path id="Pineapple1" d="M744.8 488.7L718.4 443c-2.2-3.8-7.1-5.1-10.9-2.9L688 451.2c-3.8 2.2-5.1 7.1-2.9 10.9l26.4 45.7c2.2 3.8 7.1 5.1 10.9 2.9l19.4-11.2c3.8-2.1 5.2-7 3-10.8z" class="svg-stroke animate ani_obj__8 ani_obj__2 ani-top"></path>
+            <path id="Alfasprout4" d="M560 386.1c1.2 3.3 1.7 6.2 1.5 8.9-.2 3.2-1.3 5.9-3.3 8.2-1.8 2-4.3 3.7-7.4 5-3.1 1.3-5.6 3-7.4 5-2 2.3-3.2 5-3.3 8.2-.1 2.6.4 5.6 1.5 8.9" class="svg-stroke svg-fill--none animate ani_obj__9"></path>
+            <path id="Alfasprout3" d="M332.5 603.1c-2.3 2.7-4.6 4.6-6.9 5.8-2.9 1.5-5.8 1.8-8.8 1.2-2.6-.5-5.3-1.9-8.1-3.9-2.7-2-5.4-3.4-8.1-3.9-3-.6-5.9-.2-8.8 1.2-2.3 1.2-4.6 3.1-6.9 5.8" class="svg-stroke svg-fill--none animate ani_obj__10"></path>
+            <path id="Alfasprout2" d="M774.8 551.7c-3.1 1.6-6 2.4-8.6 2.6-3.2.2-6.1-.6-8.6-2.3-2.2-1.5-4.2-3.8-5.9-6.8s-3.7-5.2-5.9-6.8c-2.5-1.7-5.4-2.5-8.6-2.3-2.6.2-5.5 1-8.6 2.6" class="svg-stroke svg-fill--none animate ani_obj__11"></path>
+            <path id="Alfasprout1" d="M553.2 527.2c3.4.6 6.2 1.7 8.4 3.1 2.7 1.8 4.5 4.1 5.5 7 .9 2.6 1.1 5.6.7 9s-.2 6.4.7 9c1 2.9 2.8 5.2 5.5 7 2.2 1.4 5 2.5 8.4 3.1" class="svg-stroke svg-fill--none animate ani_obj__12"></path>
+        </g>
+        <g id="cheese">
+            <path id="Cheese1" d="M285 647.5v54.1c0 9.5 7.8 17.4 17.4 17.4 9.5 0 17.4-7.8 17.4-17.4v-58.7" class="svg-fill--green svg-stroke animate ani_obj__13"></path>
+            <path id="Cheese2" d="M340 639.5v33.1c0 9.5 7.8 17.4 17.4 17.4 9.5 0 17.4-7.8 17.4-17.4v-37.7" class="svg-fill--green svg-stroke animate ani_obj__14"></path>
+            <path id="Cheese3" d="M604 604.5v26.1c0 9.5 7.8 17.4 17.4 17.4 9.5 0 17.4-7.8 17.4-17.4v-30.7" class="svg-fill--green svg-stroke animate ani_obj__15"></path>
+        </g>
+    </g>
+
+    <style>
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.boxed {
+    width: 400px;
+    height: 400px;
+}
+
+.boxed:hover .svg-fill--green{
+    <!-- fill: #000; -->
+    transition: fill 0.3s ease;
+}
+
+.svg-stroke {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.svg-fill--green {
+    fill: #fbb200;
+    transition: fill 0.3s ease;
+}
+
+.svg-fill--white {
+    fill: #fff;
+}
+
+.svg-fill--none {
+    fill: none;
+}
+
+#spizza-full {
+    display: none;
+}
+
+.ani-top{
+    animation-duration: 5000ms !important;
+    animation-delay: 700ms !important;
+}
+
+// Animations
+.ani {
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+.animate {
+        animation-duration: 5000ms;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+    .ani_obj__0 {
+        stroke-dasharray: 3143 3145;
+        stroke-dashoffset: 3144;
+        animation-name: ani_obj__draw_0, ani_obj__fade;
+    }
+    .ani_obj__1 {
+        stroke-dasharray: 2317 2319;
+        stroke-dashoffset: 2318;
+        animation-name: ani_obj__draw_1, ani_obj__fade;
+    }
+    .ani_obj__2 {
+        stroke-dasharray: 491 493;
+        stroke-dashoffset: 492;
+        animation-name: ani_obj__draw_2, ani_obj__fade;
+    }
+    // 3-8 are filled not stroked
+
+    .ani_obj__3,
+    .ani_obj__4,
+    .ani_obj__5,
+    .ani_obj__6,
+    .ani_obj__7,
+    .ani_obj__8 {
+        animation-name: ani_obj__fade_fill;
+    }
+    .ani_obj__9 {
+        stroke-dasharray: 55 57;
+        stroke-dashoffset: 56;
+        animation-name: ani_obj__draw_9, ani_obj__fade;
+    }
+    .ani_obj__10 {
+        stroke-dasharray: 55 57;
+        stroke-dashoffset: 56;
+        animation-name: ani_obj__draw_10, ani_obj__fade;
+    }
+    .ani_obj__11 {
+        stroke-dasharray: 55 57;
+        stroke-dashoffset: 56;
+        animation-name: ani_obj__draw_11, ani_obj__fade;
+    }
+    .ani_obj__12 {
+        stroke-dasharray: 55 57;
+        stroke-dashoffset: 56;
+        animation-name: ani_obj__draw_12, ani_obj__fade;
+    }
+    .ani_obj__13 {
+        stroke-dasharray: 168 170;
+        stroke-dashoffset: 169;
+        animation-name: ani_obj__draw_13, ani_obj__fade;
+    }
+    .ani_obj__14 {
+        stroke-dasharray: 126 128;
+        stroke-dashoffset: 127;
+        animation-name: ani_obj__draw_14, ani_obj__fade;
+    }
+    .ani_obj__15 {
+        stroke-dasharray: 112 114;
+        stroke-dashoffset: 113;
+        animation-name: ani_obj__draw_15, ani_obj__fade;
+    }
+    @keyframes ani_obj__draw {
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__fade {
+        0% {
+            stroke-opacity: 1;
+        }
+        87.5% {
+            stroke-opacity: 1;
+        }
+        100% {
+            stroke-opacity: 0;
+        }
+    }
+    @keyframes ani_obj__fade_fill {
+        0% {
+            opacity: 0;
+        }
+        10% {
+            opacity: 0;
+        }
+        30% {
+            opacity: 1;
+        }
+        87.5% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes ani_obj__draw_0 {
+        25% {
+            stroke-dashoffset: 3144;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_1 {
+        25% {
+            stroke-dashoffset: 2318;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_2 {
+        25% {
+            stroke-dashoffset: 492;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_3 {
+        25% {
+            stroke-dashoffset: 330;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_4 {
+        25% {
+            stroke-dashoffset: 285;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_5 {
+        25% {
+            stroke-dashoffset: 248;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_6 {
+        25% {
+            stroke-dashoffset: 248;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_7 {
+        25% {
+            stroke-dashoffset: 202;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_8 {
+        25% {
+            stroke-dashoffset: 202;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_9 {
+        25% {
+            stroke-dashoffset: 56;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_10 {
+        25% {
+            stroke-dashoffset: 56;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_11 {
+        25% {
+            stroke-dashoffset: 56;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_12 {
+        25% {
+            stroke-dashoffset: 56;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_13 {
+        25% {
+            stroke-dashoffset: 169;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_14 {
+        25% {
+            stroke-dashoffset: 127;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    @keyframes ani_obj__draw_15 {
+        25% {
+            stroke-dashoffset: 113;
+        }
+        56.25% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+</style>
+</svg>
+

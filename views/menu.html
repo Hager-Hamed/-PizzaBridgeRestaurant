@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>menu Restaurant</title>
+
+    <!-- start-link:: -->
+
+    <!-- ++++++++++++++++++   Adding  fav-icons  ++++++++++++++++++ -->
+
+    <!-- favicon.ico for legacy browsers -->
+    <link
+      rel="shortcut icon"
+      href="../content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+
+    <!-- 180×180 PNG image for Apple devices -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+
+    <!-- *********************    Lato Font   ************************************** -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ***********************   font-awsome library style sheets  ********************* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- **********************  Font-Awesome Icons style sheet ************************** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ***********************   styles sheets  ********************************** -->
+    <link rel="stylesheet" href="../content/css/vendeors/bootstrap.css" />
+    <link rel="stylesheet" href="../content/css/vendeors/font-icons.css" />
+    <link rel="stylesheet" href="../content/css/vendeors/all.min.css" />
+    <link rel="stylesheet" href="../content/css/main/dark.css" />
+
+    <link rel="stylesheet" href="../content/css/main/menu.css" />
+    <!-- <link rel="stylesheet" href="../content/css/main/mecars.css" /> -->
+
+    <link rel="stylesheet" href="../content/css/main/m.css" />
+
+    <link rel="stylesheet" href="../content/css/main/style.css" />
+    <!-- end-link:: -->
+  </head>
+  <body>
+    <!--  cart modal  -->
+    <div class="cart-modal-overlay">
+      <div class="cart-modal">
+        <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+
+        <div class="product-rows"></div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+          <span class="total-price">$0</span>
+          <button class="purchase-btn">PURCHASE</button>
+        </div>
+      </div>
+    </div>
+    <!--   end of cart modal -->
+    <!-- start: Navbar -->
+    <nav
+      class="navbar bg-white navbar-expand-lg navbar-light fixed-top py-3 font-heading shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar__brand-link" href="#">
+          <img
+            class="navbar__brand-logo"
+            src="../content/assets/images/logo-1.png"
+            alt=" Pizza logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse flex-grow-0 navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="collapse flex-grow-0 navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-regular fa-heart"></i>
+            </li>
+            <div class="cart-btn nav-item">
+              <i
+                id="cart"
+                class="nav-link fa fa-shopping-cart shopping-cart fa-solid"
+              >
+              <span class="cart-quantity">0</span></i>
+             
+            </div>
+
+            <div class="theme nav-item">
+              <i class="theme__icon nav-link fas fa-sun"></i>
+              <label class="theme__switch">
+                <input class="switch__input" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end : Navbar -->
+    <!-- start: Manu -->
+    <section class="sec sec--featured-products">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold">Our Menu</h2>
+          <p class="text-danger lead f fst-italic">Fresh From Pizzon</p>
+        </div>
+        <div class="row">
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/2.png"
+                  alt="pizaa"
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                 <div class="product-card__info">
+                  <h5 class="h5 d-block">Vegetarian</h5>
+                  <span class="product-price text-danger fw-bold fst-italic">&dollar; 100.00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/3.png"
+                  alt="pizaa Four Cheese"
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Four Cheese</h5>
+                  <span class="product-price text-danger fw-bold fst-italic">&dollar; 136</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/5.png"
+                  alt="pizaa Pepperoni "
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Pepperoni</h5>
+                  <span class="product-price text-danger fw-bold fst-italic">&dollar; 59</span>
+                  <!-- <p class="fw-bold fst-italic text-danger"></p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/h3-product-img-2a.png"
+                  alt="pizaa FIORI DI ZUCCA"
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Fiori Di Zucca</h5>
+                <span class="product-price text-danger fw-bold fst-italic ">&dollar; 50.00</span>
+
+                  <!-- <p class="fw-bold fst-italic text-danger"></p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/h3-product-img-1a.png"
+                  alt="pizaa BISMARCK "
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Fiori Di Zucca</h5>
+                <span class="product-price text-danger fw-bold fst-italic ">&dollar; 35.00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/h3-product-img-3a.png"
+                  alt="pizaa CAMPAGNOLA"
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Fiori Di Zucca</h5>
+                <span class="product-price text-danger fw-bold fst-italic ">&dollar; 95.00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/4.gif"
+        alt="pizaa Pepperoni "
+      />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Fiori Di Zucca</h5>
+                <span class="product-price text-danger fw-bold fst-italic ">&dollar; 99.00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/1-300x300.gif"
+                  alt="pizaa Pepperoni "
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Nutella</h5>
+                <span class="product-price text-danger fw-bold fst-italic ">&dollar; 65.00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/6-600x600.gif"
+                  alt="pizaa DIABLO "
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Diablo</h5>
+                <span class="product-price text-danger fw-bold fst-italic ">&dollar; 50.00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/h4-product-7a.png"
+                  alt="pizaaMARE E MONTI "
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Boscaiola</h5>
+                <span class="product-price text-danger fw-bold fst-italic ">&dollar; 85.00</span>
+
+                  <!-- <p class="fw-bold fst-italic text-danger"></p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/h4-product-12a.png"
+                  alt="pizaa FIORI DI ZUCCA"
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Francescana</h5>
+                <span class="product-price text-danger fw-bold fst-italic ">&dollar; 35.00</span>   
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="w-25">
+          <article class="product-card">
+            <div class="items-container">
+              <div class="card-1 card">
+                <img
+                  class="product-image"
+                  src="../content/assets/images/menu/pizza-06.png"
+                  alt="pizaa FIORI DI ZUCCA"
+                />
+                <button class="add-to-cart">Add to cart</button>
+                <ul class="product-card__option-list">
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-shuffle"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >compare</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-solid fa-magnifying-glass"
+                      ></i>
+
+                      <span class="product-card__option-list-tooltip"
+                        >quick view</span
+                      >
+                    </button>
+                  </li>
+                  <li class="product-card__option-item">
+                    <button class="product-card__option-list-btn">
+                      <i
+                        class="product-card__option-list-icon fa-regular fa-heart"
+                      ></i>
+                      <span class="product-card__option-list-tooltip"
+                        >add to wishlist</span
+                      >
+                    </button>
+                  </li>
+                </ul>
+                <div class="product-card__info">
+                  <h5 class="h5 d-block">Parmiglana</h5>
+                <span class="product-price text-danger fw-bold fst-italic ">&dollar; 50.00</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--  end Menu -->
+     <!-- start footer -->
+     <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="./content/assets/images/logo-white-red.png"
+                      class="img-fluid"
+                      alt="pizza logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    PizzaBridge, the pizzeria offering you the most delicious
+                    sliced pizza, made with the finest ingredients and in a
+                    traditional way.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="../indes.html">Home</a></li>
+                  <li><a href="./about.html">about</a></li>
+                  <li><a href="./menu.html">Menu</a></li>
+                  <li><a href="./menu.html">Offers</a></li>
+                  <li><a href="./contact us.html">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="./contact.html">Contact us</a></li>
+                  <li><a href="#">Find A Restaurant </a></li>
+                  <li><a href="#">Join our team</a></li>
+                  <li><a href="#">Delivery</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe Now</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Enter Your Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <div class="copyright-text">
+                  <p>Copyright &copy; 2023, Hager Hamed Mohamed</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="./views/about.html">About</a></li>
+                  <li><a href="./views/menu.html">Menu</a></li>
+                  <li><a href="./views/contact us.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  end footer -->
+    <!-- start-script:: -->
+    <script src="./content/js/vendeors/bootstrap.bundle.js"></script>
+
+    <script src="../content/js/main/dark.js"></script>
+    <script src="../content/js/main/mencard.js"></script>
+
+    <!-- end-script:: -->
+  </body>
+</html>

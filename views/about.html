@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>about Restaurant</title>
+
+    <!-- start-link:: -->
+
+    <!-- ++++++++++++++++++   Adding  fav-icons  ++++++++++++++++++ -->
+
+    <!-- favicon.ico for legacy browsers -->
+    <link
+      rel="shortcut icon"
+      href="../content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+
+    <!-- 180×180 PNG image for Apple devices -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+
+    <!-- *********************    Lato Font   ************************************** -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ***********************   font-awsome library style sheets  ********************* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- **********************  Font-Awesome Icons style sheet ************************** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ***********************   styles sheets  ********************************** -->
+    <link rel="stylesheet" href="../content/css/vendeors/bootstrap.css" />
+    <link rel="stylesheet" href="../content/css/vendeors/font-icons.css" />
+    <link rel="stylesheet" href="../content/css/vendeors/all.min.css" />
+    <link rel="stylesheet" href="../content/css/main/dark.css" />
+    <link rel="stylesheet" href="../content/css/main/about.css" />
+    <link rel="stylesheet" href="../content/css/main/style.css" />
+    <!-- end-link:: -->
+  </head>
+  <body>
+    <!-- start: Navbar -->
+    <nav
+      class="navbar bg-white navbar-expand-lg navbar-light fixed-top py-3 font-heading shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar__brand-link" href="#">
+          <img
+            class="navbar__brand-logo"
+            src="../content/assets/images/logo-1.png"
+            alt=" Pizza logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse flex-grow-0 navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./menu.html"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="collapse flex-grow-0 navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-cart-shopping"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-regular fa-heart"></i>
+            </li>
+            <div class="theme nav-item">
+              <i class="theme__icon nav-link fas fa-sun"></i>
+              <label class="theme__switch">
+                <input class="switch__input" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end : Navbar -->
+
+    <!-- start About -->
+    <main>
+      <section class="sec--hero bg-image bg-secondary vh-100 pt-5">
+        <div class="container h-100 py-5">
+          <div class="h-100 row justify-content-center align-items-center">
+            <div class="col-lg-8 text-center">
+              <h1 class="text-white display-4">About</h1>
+              <hr class="divider bg-primary" />
+              <p class="text-light text-opacity-75 mb-5 lead">Home // About</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-5">
+        <div class="container">
+          <div class="row gy-5 gy-lg-0">
+            <div class="col-lg-4">
+              <div class="p-3">
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img
+                    class=" "
+                    src="../content/assets/images/icon_2.png"
+                    alt="Oridinal"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h3 class="mt-4 fw-bold fst-italic text-danger">
+                    Taste Food
+                  </h3>
+                  <p class="text-muted">
+                    We are offering you the most delicious sliced pizza, made
+                    with the finest ingredients and in a traditional way,We
+                    create food we’re proud to serve and deliver it fast, with a
+                    smile.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="p-3">
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img
+                    class=" "
+                    src="../content/assets/images/images.png"
+                    alt="Fastest Delivery"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h3 class="mt-4 fw-bold fst-italic text-danger">
+                    Fastest Delivery
+                  </h3>
+                  <p class="text-muted">
+                    Free delivery offer applies to regular delivery orders.
+                    Customers who are not registered on the site will be charged
+                    delivery fees
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="p-3">
+                <div class="col-md-4 d-flex justify-content-center">
+                  <img
+                    class=" "
+                    src="../content/assets/images/icon_1.png"
+                    alt="Quality Foods"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h3 class="mt-4 fw-bold fst-italic text-danger">
+                    Quality Foods
+                  </h3>
+                  <p class="text-muted">
+                    We are offering you the most delicious sliced pizza, made
+                    with the finest ingredients and in a traditional way,We
+                    create food we’re proud to serve and deliver it fast, with a
+                    smile.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-light py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h2 class="h1 text-danger">Serving Pizzas By The Slice</h2>
+              <p class="lead fst-italic">
+                Welcome to ARAPIZZA, We are offering you the most delicious
+                sliced pizza, made with the finest ingredients and in a
+                traditional way,We create food we’re proud to serve and deliver
+                it fast, with a smile. No matter where you find us, we’re making
+                sure each meal our customers enjoy is delicious and
+                one-of-a-kind.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                class="img-thumbnail w-100 d-block"
+                src="../content/assets/images/auth.jpg"
+                alt=" Serving Pizzas"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="soo--hero bg-image bg-secondary vh-100 pt-5">
+        <div class="container h-100 py-5">
+          <div class="h-100 row justify-content-center align-items-center">
+            <div class="col-lg-8 text-center">
+              <h3 class="text-white display-4 text-danger">
+                Our success Story
+              </h3>
+              <hr class="divider bg-primary" />
+              <p class="text-light text-opacity-75 mb-5 lead">
+                MORE THAN PIZZA We have been with you for more than 10 years, do
+                not hesitate to contact us, we work day and night from For you
+                and we give you our best
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec--portfolio">
+        <div class="container-fluid py-5">
+          <div class="text-center mb-5">
+            <h2 class="display-5 text-danger">Bestselling Pizzas</h2>
+            <p class="lead f fst-italic text-muted">
+              With a more “contemporary” style, our gourmet pizzas are where the
+              creativity of our pizza chefs shines.
+            </p>
+          </div>
+          <div class="row g-0">
+            <div class="col-md-6 col-xl-4">
+              <a href="#" target="_blank">
+                <figure class="portfolio-card position-relative mb-0">
+                  <img
+                    class="img-fluid portfolio-card__image"
+                    src="../content/assets/images/pizza-18.jpg"
+                    alt="ecomerce webapp"
+                  />
+                  <figcaption
+                    class="portfolio-card__caption bg-opacity-75 position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center"
+                  ></figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a href="#" target="_blank">
+                <figure class="portfolio-card position-relative mb-0">
+                  <img
+                    class="img-fluid portfolio-card__image"
+                    src="../content/assets/images/pizza-17.jpg"
+                    alt="ecomerce webapp"
+                  />
+                  <figcaption
+                    class="portfolio-card__caption bg-opacity-75 position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center"
+                  ></figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a href="#" target="_blank">
+                <figure class="portfolio-card position-relative mb-0">
+                  <img
+                    class="img-fluid portfolio-card__image"
+                    src="../content/assets/images/pizza-16.jpg"
+                    alt="ecomerce webapp"
+                  />
+                  <figcaption
+                    class="portfolio-card__caption bg-opacity-75 position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center"
+                  ></figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a href="#" target="_blank">
+                <figure class="portfolio-card position-relative mb-0">
+                  <img
+                    class="img-fluid portfolio-card__image"
+                    src="../content/assets/images/pizza-15.jpg"
+                    alt="ecomerce webapp"
+                  />
+
+                  <figcaption
+                    class="portfolio-card__caption bg-opacity-75 position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center"
+                  ></figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a href="#" target="_blank">
+                <figure class="portfolio-card position-relative mb-0">
+                  <img
+                    class="img-fluid portfolio-card__image"
+                    src="../content/assets/images/pizza-14.jpg"
+                    alt="ecomerce webapp"
+                  />
+                  <figcaption
+                    class="portfolio-card__caption bg-opacity-75 position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center"
+                  ></figcaption>
+                </figure>
+              </a>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <a href="assets/images/portfolio/project-6.jpg" target="_blank">
+                <figure class="portfolio-card position-relative mb-0">
+                  <img
+                    class="img-fluid portfolio-card__image"
+                    src="../content/assets/images/pizza-13.jpg"
+                    alt="ecomerce webapp"
+                  />
+                  <figcaption
+                    class="portfolio-card__caption bg-opacity-75 position-absolute start-0 end-0 top-0 bottom-0 d-flex flex-column justify-content-center align-items-center"
+                  ></figcaption>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  end About -->
+    <!-- start footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="../content/assets/images/logo-white-red.png"
+                      class="img-fluid"
+                      alt="pizza logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    PizzaBridge, the pizzeria offering you the most delicious
+                    sliced pizza, made with the finest ingredients and in a
+                    traditional way.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="../indes.html">Home</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="menu.html">Offers</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                  <li><a href="#">Find A Restaurant </a></li>
+                  <li><a href="#">Join our team</a></li>
+                  <li><a href="#">Delivery</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe Now</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Enter Your Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <div class="copyright-text">
+                  <p>Copyright &copy; 2023, Hager Hamed Mohamed</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="./about.html">About</a></li>
+                  <li><a href="./menu.html">Menu</a></li>
+                  <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  end footer -->
+    <!-- start-script:: -->
+    <script src="./content/js/vendeors/bootstrap.bundle.js"></script>
+
+    <script src="../content/js/main/dark.js"></script>
+    <!-- end-script:: -->
+  </body>
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pizza Bridge Restaurant</title>
+
+    <!-- start-link:: -->
+
+    <!-- **************** fav-icons **************** -->
+
+    <link
+      rel="shortcut icon"
+      href="./content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+
+    <!-- 180×180 PNG image for Apple devices -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./content/assets/images/fdb994a94bfba1b4711d35ae2b0898c0.jpg"
+    />
+
+    <!-- *********************    Lato Font   ************************************** -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ***********************   font-awsome library style sheets  ********************* -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- **********************  Font-Awesome Icons style sheet ************************** -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ***********************   styles sheets  ********************************** -->
+    <link rel="stylesheet" href="./content/css/vendeors/bootstrap.css" />
+    <link rel="stylesheet" href="./content/css/vendeors/font-icons.css" />
+    <link rel="stylesheet" href="./content/css/vendeors/all.min.css" />
+    <link rel="stylesheet" href="./content/css/main/dark.css" />
+
+    <link rel="stylesheet" href="./content/css/main/style.css" />
+    <!-- end-link:: -->
+  </head>
+  <body>
+    <!-- start: Navbar -->
+    <nav
+      class="navbar bg-white navbar-expand-lg navbar-light fixed-top py-3 font-heading shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar__brand-link" href="#">
+          <img
+            class="navbar__brand-logo"
+            src="./content/assets/images/logo-1.png"
+            alt=" Pizza logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse flex-grow-0 navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./views/about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./views/menu.html"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./views/Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="collapse flex-grow-0 navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-magnifying-glass"></i>
+            </li>
+            <li class="nav-item">
+              <i
+                class="nav-link fa-solid fa-cart-shopping"
+                class="bi bi-cart"
+              ></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-regular fa-heart"></i>
+            </li>
+            <div class="theme nav-item">
+              <i class="theme__icon nav-link fas fa-sun"></i>
+              <label class="theme__switch">
+                <input class="switch__input" type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end : Navbar -->
+    <!--start : Home -->
+    <main>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        style="margin-top: 66px"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="img-wrapper position-relative">
+              <img
+                src="./content/assets/images/carousel1.png"
+                class="d-block w-100"
+                alt="pizaa"
+              />
+              <div
+                class="position-absolute top-0 start-0 bottom-0 end-0 bg-dark bg-opacity-75"
+              ></div>
+            </div>
+
+            <div class="carousel-caption d-none d-md-block text-start top-50">
+              <h5 class="h1">MORE THAN PIZZA</h5>
+
+              <p class="lead">
+                We have been with you for more than 10 years, do not hesitate to
+                contact us, we work day and night from For you and we give you
+                our best
+              </p>
+
+              <button class="btn btn-warning text-capitalize btn-lg">
+                the stronget menu
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-wrapper position-relative">
+              <img
+                src="./content/assets/images/carousel2.png"
+                class="d-block w-100"
+                alt="pizaa"
+              />
+              <div
+                class="position-absolute top-0 start-0 bottom-0 end-0 bg-dark bg-opacity-75"
+              ></div>
+            </div>
+            <div class="carousel-caption d-none d-md-block text-start top-50">
+              <h5 class="h1">MORE THAN PIZZA</h5>
+
+              <p class="lead">
+                We have been with you for more than 10 years, do not hesitate to
+                contact us, we work day and night from For you and we give you
+                our best
+              </p>
+
+              <button class="btn btn-warning text-capitalize btn-lg">
+                the stronget menu
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-wrapper position-relative">
+              <img
+                src="./content/assets/images/carousel3.png"
+                class="d-block w-100"
+                alt="pizza"
+              />
+              <div
+                class="position-absolute top-0 start-0 bottom-0 end-0 bg-dark bg-opacity-75"
+              ></div>
+            </div>
+
+            <div class="carousel-caption d-none d-md-block text-start top-50">
+              <h5 class="h1">MORE THAN PIZZA</h5>
+
+              <p class="lead">
+                We have been with you for more than 10 years, do not hesitate to
+                contact us, we work day and night from For you and we give you
+                our best
+              </p>
+
+              <button class="btn btn-warning text-capitalize btn-lg">
+                the stronget menu
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-wrapper position-relative">
+              <img
+                src="./content/assets/images/carousel4.png"
+                class="d-block w-100"
+                alt="pizza"
+              />
+              <div
+                class="position-absolute top-0 start-0 bottom-0 end-0 bg-dark bg-opacity-75"
+              ></div>
+            </div>
+
+            <div class="carousel-caption d-none d-md-block text-start top-50">
+              <h5 class="h1">MORE THAN PIZZA</h5>
+
+              <p class="lead">
+                We have been with you for more than 10 years, do not hesitate to
+                contact us, we work day and night from For you and we give you
+                our best
+              </p>
+
+              <button class="btn btn-warning text-capitalize btn-lg">
+                the stronget menu
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img-wrapper position-relative">
+              <img
+                src="./content/assets/images/pizza-8.png"
+                class="d-block w-100"
+                alt="pizaa"
+              />
+              <div
+                class="position-absolute top-0 start-0 bottom-0 end-0 bg-dark bg-opacity-75"
+              ></div>
+            </div>
+
+            <div class="carousel-caption d-none d-md-block text-start top-50">
+              <h5 class="h1">MORE THAN PIZZA</h5>
+
+              <p class="lead">
+                We have been with you for more than 10 years, do not hesitate to
+                contact us, we work day and night from For you and we give you
+                our best
+              </p>
+
+              <button class="btn btn-warning text-capitalize btn-lg">
+                the stronget menu
+              </button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section class="alert-dark py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-5 text-danger">Your Favorite Pizza Place</h2>
+            <p class="lead">
+              Dolorum offendit sed at, ad aliquid vivendo cum. Eum ex liber
+              maiorum necessitatibus. Soluta suscipiantur ne cum. Pri esse
+              causae constituam ad. Et eum mazim mnesarchum definitiones, ad
+              suas.
+            </p>
+          </div>
+          <div class="row gy-5 gy-lg-0">
+            <div class="col-lg-4">
+              <div class="bg-light p-3 text-center">
+                <img
+                  class="img-thumbnail top-categories__images__item"
+                  src="./content/assets/images/h1-img-10.jpg"
+                  alt="Napolitana"
+                />
+                <h3 class="mt-4 fw-bold fst-italic">Napolitana</h3>
+                <p class="text-muted">
+                  Eu eam timeam eripuit, quis appetei imperdiet ea est sunt.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="bg-light p-3 text-center">
+                <img
+                  class="img-thumbnail top-categories__images__item"
+                  src="./content/assets/images/h1-img-5.jpg"
+                  alt=""
+                />
+                <h3 class="mt-4 fw-bold fst-italic">Fiorentina</h3>
+                <p class="text-muted">
+                  Eu eam timeam eripuit, quis appetei imperdiet ea est sunt.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="bg-light p-3 text-center">
+                <img
+                  class="img-thumbnail top-categories__images__item"
+                  src="./content/assets/images/h1-img-6.jpg "
+                  alt=""
+                />
+                <h3 class="mt-4 fw-bold fst-italic">Great for groups</h3>
+                <p class="text-muted">
+                  Eu eam timeam eripuit, quis appetei imperdiet ea est sunt.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="bg-light p-3 text-center">
+                <img
+                  class="img-thumbnail top-categories__images__item"
+                  src="./content/assets/images/about-us-img-1-1.jpg "
+                  alt=""
+                />
+                <h3 class="mt-4 fw-bold fst-italic">Pomodorini</h3>
+                <p class="text-muted">
+                  Eu eam timeam eripuit, quis appetei imperdiet ea est sunt.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="bg-light p-3 text-center">
+                <img
+                  class="img-thumbnail top-categories__images__item"
+                  src="./content/assets/images/about-us-img-3.jpg "
+                  alt=""
+                />
+                <h3 class="mt-4 fw-bold fst-italic">Margharetta</h3>
+                <p class="text-muted">
+                  Eu eam timeam eripuit, quis appetei imperdiet ea est sunt.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="bg-light p-3 text-center">
+                <img
+                  class="img-thumbnail top-categories__images__item"
+                  src="./content/assets/images/pizza-8.png "
+                  alt=""
+                />
+                <h3 class="mt-4 fw-bold fst-italic">Black delight</h3>
+                <p class="text-muted">
+                  Eu eam timeam eripuit, quis appetei imperdiet ea est sunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="alert-dark py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="lead f fst-italic">Fresh From Pizzon</p>
+
+            <h2 class="display-5 fw-bold text-danger">OUR SPECIALITY</h2>
+          </div>
+          <div class="row gy-5 gy-lg-0">
+            <div class="col-lg-4">
+              <div class="p-3 text-center">
+                <img
+                  class="rounded-circle img-thumbnail cate-image__item"
+                  src="./content/assets/images/speciality-1.jpg"
+                  alt="Napolitana"
+                />
+                <h3 class="mt-4 lead text-muted">Our Customers' Top Picks</h3>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="p-3 text-center">
+                <img
+                  class="rounded-circle img-thumbnail cate-image__item"
+                  src="./content/assets/images/speciality-3.jpg"
+                  alt=""
+                />
+                <h3 class="mt-4 lead text-muted">Our Customers' Top Picks</h3>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="p-3 text-center">
+                <img
+                  class="rounded-circle img-thumbnail cate-image__item"
+                  src="./content/assets/images/speciality-2.jpg "
+                  alt=""
+                />
+                <h3 class="mt-4 lead text-muted">Our Customers' Top Picks</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="saa saa--hero">
+        <div class="saa--hero__content text-center">
+          <div class="container">
+            <p class="saa--hero__text">Order Online</p>
+            <h1 class="saa--hero__title ruler">Get 10% Off Your First Order</h1>
+            <p class="saa--hero__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Ipsum has been the industry's standard dummy text ever
+              since the 1500s
+            </p>
+
+            <a
+              class="btn btn-warning text-capitalize btn-lg btn-hover"
+              href="./views/menu.html"
+              >Order Online</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  end : Home -->
+    <!-- start footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="./content/assets/images/logo-white-red.png"
+                      class="img-fluid"
+                      alt="pizza logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p>
+                    PizzaBridge, the pizzeria offering you the most delicious
+                    sliced pizza, made with the finest ingredients and in a
+                    traditional way.
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./views/about.html">about</a></li>
+                  <li><a href="./views/menu.html">Menu</a></li>
+                  <li><a href="./views/menu.html">Offers</a></li>
+                  <li><a href="./views/contact.html">Contact</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="./views/contact.html">Contact us</a></li>
+                  <li><a href="#">Find A Restaurant </a></li>
+                  <li><a href="#">Join our team</a></li>
+                  <li><a href="#">Delivery</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe Now</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Enter Your Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <div class="copyright-text">
+                  <p>Copyright &copy; 2023, Hager Hamed Mohamed</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./views/about.html">About</a></li>
+                  <li><a href="./views/menu.html">Menu</a></li>
+                  <li><a href="./views/contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  end footer -->
+    <!-- start-script:: -->
+    <script src="./content/js/vendeors/bootstrap.bundle.js"></script>
+    <script src="./content/js/main/dark.js"></script>
+    <script src="./content/js/main/scrept.js"></script>
+    <!-- end-script:: -->
+  </body>
+</html>
+
+<!-- end show data cart  -->

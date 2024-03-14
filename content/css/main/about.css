@@ -1,0 +1,34 @@
+/* start-style:: Sections styles */
+.sec--hero {
+  background-image: url("../../assets/images/title-area-1.jpg");
+}
+
+.soo--hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("../../assets/images/subheader-2.jpg");
+}
+
+.soo {
+  padding: 8rem 0;
+}
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.portfolio-card__caption {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.portfolio-card:hover .portfolio-card__caption {
+  opacity: 0.5;
+  background-color: #f1e6da;
+}

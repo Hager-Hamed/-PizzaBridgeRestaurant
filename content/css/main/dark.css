@@ -1,0 +1,103 @@
+/* start dark mode */
+:root {
+  --c-primary: rgb(18, 114, 204);
+  --c-secondary: #fff3cd;
+
+  --c-title: rgb(35, 39, 47);
+  --c-text: rgb(64, 71, 86);
+  --bg-text: rgb(246, 247, 249);
+
+  --bg: rgb(255, 255, 255);
+
+  --box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] {
+  --c-primary: rgb(162, 210, 225);
+  --c-secondary: #ffe69c;
+
+  --c-title: #495057;
+  --c-text: #495057;
+  --bg-text: rgb(52, 58, 70);
+
+  --bg: rgb(35, 39, 47);
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  min-height: 100%;
+  font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--c-text);
+  background-color: var(--bg);
+}
+/*start-style:: Switch */
+.theme {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+/* The theme__switch - the box around the slider */
+.theme__switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+}
+/* Hide default HTML checkbox */
+.theme__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-text);
+  transition: 0.4s;
+  border: 2px solid var(--c-text);
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 10px;
+  bottom: 2px;
+  background-color: var(--c-text);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: var(--c-secondary);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--c-secondary);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*end-style:: Switch */
+
+/* end dark mode */
